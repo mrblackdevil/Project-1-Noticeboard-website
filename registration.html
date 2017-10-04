@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Beautibe.az - shopstore</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style/style.min.css">
+	<script type="text/javascript">
+		function showHide (id)
+		{
+		var style = document.getElementById(id).style
+		if (style.visibility == "hidden")
+		style.visibility = "visible";
+		else
+		style.visibility = "hidden";
+		} 
+	 </script>
+</head>
+<header class="index-header">
+	<section class="content-header">
+		<article class="miniblock">
+			<p class="block-first"></p>
+			<p class="block-second"></p>
+			<p class="block-third"></p>
+		</article>
+		<article class="name-block">
+			<a href="index.html">
+				<img src="images/logo2.png" width="20" height="20" alt="Логотип Beatitoobe.az">
+				<h1 class="index-title">Beatibe.az - shopstore</h1>
+			</a>
+		</article>
+		<article class="login-form">
+			<a>Вход</a>
+			<span class="user-pic"></span>
+		</article>	
+	</section>
+</header>
+<main class="index-main clearfix">
+<section class="aside" >
+	<h2 class="visually-hidden">Меню с навигацией</h2>
+	<article class="add-item">
+		<span class="add-pic"></span>
+		<a href="registration.html" class="add-reg">Добавить товар</a>
+	</article>
+	<article class="aside-menu">
+		<ul class="aside-nav">	
+			<li><a href="registration.html">Мой профиль</a></li>
+			<li><a href="registration.html">История просмотров</a></li>	
+			<li><a href="registration.html">Любимые товары</a></li>
+			<li><a href="registration.html">Любимые бренды</a></li>
+		</ul>
+	</article>
+	<article class="item-position">
+		<ul class="position-list">
+			<li class="item-stock"><b>В наличии</b></li>
+			<li class="item-wait">Ожидаеться</li>
+			<li class="item-notavaiable">Нет в наличии<li>
+		</ul>
+	</article>
+	<article class="last-view-item">
+			<ul class="last-view-nav">
+				<li><img src="images/item-minipic.png" width="40" height="40" class="item-minipic" alt=""></li>
+				<li><a href="item.html">Сумочка стильная</a></li>
+				<li>
+					<b class="last-view-title">Brand1</b> 
+					<b class="last-view-price">200$</b>
+				</li>
+				<li><img src="images/item-minipic.png" width="40" height="40" class="item-minipic" alt=""></li>
+				<li><a href="">Сумочка стильная</a></li>
+				<li>
+					<b class="last-view-title">Brand1</b> 
+					<b class="last-view-price">200$</b>
+				</li>
+				<li><img src="images/item-minipic.png" width="40" height="40" class="item-minipic" alt=""></li>
+				<li><a href="">Сумочка стильная</a></li>
+				<li>
+					<b class="last-view-title">Brand1</b> 
+					<b class="last-view-price">200$</b>
+				</li>
+				<li><img src="images/item-minipic.png" width="40" height="40" class="item-minipic" alt=""></li>
+				<li><a href="">Сумочка стильная</a></li>
+				<li>
+					<b class="last-view-title">Brand1</b> 
+					<b class="last-view-price">200$</b>
+				</li>
+				<li><img src="images/item-minipic.png" width="40" height="40" class="item-minipic" alt=""></li>
+				<li><a href="">Сумочка стильная</a></li>
+				<li>
+					<b class="last-view-title">Brand1</b> 
+					<b class="last-view-price">200$</b>
+				</li>
+				<li><img src="images/item-minipic.png" width="40" height="40" class="item-minipic" alt=""></li>
+				<li><a href="">Сумочка стильная</a></li>
+				<li>
+					<b class="last-view-title">Brand1</b> 
+					<b class="last-view-price">200$</b>
+				</li>
+			</ul>
+	</article>
+</section>
+<section class="item-block">
+	<div class="container_form" >
+    <a class="hiddenanchor" id="toregister"></a>
+    <a class="hiddenanchor" id="tologin"></a>
+    <div id="wrapper">
+        <div id="login" class="animate form">
+            <form  action="mysuperscript.php" autocomplete="on"> 
+                <h1>Вход</h1> 
+                <p> 
+                    <label for="username" class="uname" data-icon="u" > Ваш e-mail или логин</label>
+                    <input id="username" name="username" required="required" type="text" placeholder="Логин или email"/>
+                </p>
+                <p> 
+                    <label for="password" class="youpasswd" data-icon="p"> Ваш пароль </label>
+                    <input id="password" name="password" required="required" type="password" placeholder="Введите пароль" /> 
+                </p>
+                <p class="keeplogin"> 
+                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                    <label for="loginkeeping">Запомнить меня</label>
+                </p>
+                <p class="login button"> 
+                    <input type="submit" value="Войти" /> 
+                </p>
+                <p class="change_link">
+                    Не зарегистрированы еще ?
+                    <a href="#toregister" class="to_register">Присоединяйтесь</a>
+                </p>
+            </form>
+        </div>
+        <div id="register" class="animate form">
+            <form autocomplete="on"> 
+                <h1> Регистрация </h1> 
+                <p> 
+                    <label for="usernamesignup" class="uname" data-icon="u">Ваш логин</label>
+                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="myname1" />
+                </p>
+                <p> 
+                    <label for="emailsignup" class="youmail" data-icon="e" > Ваш e-mail</label>
+                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="beautibe.az@my.com"/> 
+                </p>
+                <p>
+										<input type="checkbox" onclick="showHide('whatever');" /> 
+										<label for="checkbox">Я бренд !</label>
+										<input name="name" type="text" placeholder='Введите названия бренда' id="whatever" required="required" style="visibility:hidden">
+                </p>
+                <p> 
+                    <label for="passwordsignup" class="youpasswd" data-icon="p">Ваш пароль </label>
+                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="123456"/>
+                </p>
+                <p> 
+                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Подтвердите ваш пароль </label>
+                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="123456"/>
+                </p>
+                    <p class="signin button"> 
+                    <input type="submit" value="Регистрация"/> 
+                </p>
+                <p class="change_link">  
+                    Уже зарегистрированы ?
+                    <a href="#tologin" class="to_register"> Войдите на сайт </a>
+                </p>
+            </form>
+        </div>						
+    </div>
+</div>
+</section>
+</main>
+<footer class="index-footer clearfix">
+	<div class="help-content">
+		 <a href="how it work.html"><img src="images/how.png"  width="25" height="25" alt="Как это работает?"></a>
+		 <a href="contacts.html"><img src="images/info.png" width="25" height="25" alt="Мы находимся тут!"></a>
+		 <a href="help.html"><img src="images/help.png" width="25" height="25" alt="Поддержка"></a>
+	 </div>
+</footer>
+</body>
+</html>
